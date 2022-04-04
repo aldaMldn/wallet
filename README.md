@@ -1,8 +1,5 @@
 # wallet Julo Test
 
-how to run:
-after clone this repo just run
--> npm run devStart
+after clone this repo just run <b>npm run devStart</b>
 
-clintAgent
--> request.rest
+Example Request in <b>request.rest</b>
