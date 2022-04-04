@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "owned_by": 1,
+        "status": "disabled",
+        "enabled_at": null,
+        "balance": 0
+    },
+    {
+        "id": 2,
+        "owned_by": 2,
+        "status": "disabled",
+        "enabled_at": null,
+        "balance": 0
+    }
+]

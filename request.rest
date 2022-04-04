@@ -1,0 +1,44 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "userId": 1
+}
+###
+
+
+GET http://localhost:3000/user/init 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ5MTA2OTE0fQ.84c0lMcG9k7lLAdhV2biCZVL05eTUvWTxB1QzX_GNvE
+###
+
+
+POST  http://localhost:3000/user/wallet
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ5MTA2OTE0fQ.84c0lMcG9k7lLAdhV2biCZVL05eTUvWTxB1QzX_GNvE
+
+###
+
+GET  http://localhost:3000/user/wallet
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ5MTA2OTE0fQ.84c0lMcG9k7lLAdhV2biCZVL05eTUvWTxB1QzX_GNvE
+
+###
+
+POST http://localhost:3000/user/wallet/deposit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ5MTA2OTE0fQ.84c0lMcG9k7lLAdhV2biCZVL05eTUvWTxB1QzX_GNvE
+Content-Type: application/json
+
+{
+    "amount": 10000
+}
+###
+
+POST http://localhost:3000/user/wallet/withdrawals
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ5MTA2OTE0fQ.84c0lMcG9k7lLAdhV2biCZVL05eTUvWTxB1QzX_GNvE
+Content-Type: application/json
+
+{
+    "amount": 6000
+}
+###
+
+patch  http://localhost:3000/user/wallet
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ5MTA2OTE0fQ.84c0lMcG9k7lLAdhV2biCZVL05eTUvWTxB1QzX_GNvE
